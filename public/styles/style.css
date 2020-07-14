@@ -1,0 +1,283 @@
+body {
+  background-image: url("/public/assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Fira Code', monospace;
+  
+}
+h2 {
+  color: #00ff00;
+  font-weight: bold;
+}
+.h2 {
+  color: #00ff00;
+  font-weight: bold;
+  
+}
+.h2:hover {
+  color: inherit;
+  text-decoration: none;
+}
+h2 a {
+  color: #00ff00;
+  font-size: 20px;
+  text-decoration: none;
+}
+h3 {
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navbar {
+  background-color: #333333 !important;
+  font-weight: bold;
+}
+.navbar-brand img {
+  width: 100px;
+}
+.nav-link {
+  color: #00ff00 !important;
+}
+.nav-link:hover {
+  color: #088734 !important;
+}
+.margin {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.home img {
+  border-radius: 20px;
+}
+.home h3 {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: justify;
+}
+#home {
+  background-image: url(/public/assets/1.jpg);
+
+  padding-top: 7%;
+  padding-bottom: 7%;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#home h3{
+  font-weight: lighter;
+}
+.parceiros {
+  background-color: #fafafa80 !important;
+}
+.parceiros .row {
+  margin-top: 50px;
+}
+.portfolio {
+  background-color: #f0f0f080;
+}
+.portfolio .row {
+  margin-top: 50px;
+}
+.col-lg-4 img {
+  border-radius: 8px;
+}
+.row img {
+  border-radius: 8px;
+}
+.row h3 {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* hover para as categorias do portfolio */
+.over {
+  position: relative;
+}
+.over .img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #088734;
+}
+.over:hover .overlay {
+  opacity: 1;
+}
+.over-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about {
+  background-color: #bebebe80;
+}
+#publicacoes img {
+  width: 100%;
+  height: 240px;
+}
+#referencias h3 {
+  text-align: justify;
+}
+
+.bg-footer {
+  position: bottom;
+  color: #00ff00;
+  font-weight: bold;
+}
+
+
+
+
+.w-contacts-item{
+  text-align: left;
+ }
+.w-socials{
+  font-family: 'Fira Code', monospace;
+  text-align: justify;
+  font-weight: normal;
+  color: #fafafa; 
+}
+.w-socials a{
+  cursor: pointer;
+  color:inherit;
+  text-decoration:none;
+}
+.footer-menu{
+  text-align: left;
+}
+.footer-menu ul li a{
+  cursor: pointer;
+  color: #fafafa;
+  text-decoration:none;
+}
+.footer-menu ul  {
+  list-style: none; 
+}
+.footer-menu ul li:before {
+ color: #088734;
+  content: "↳‎‎‎ ";
+ 
+}
+.socialm{
+  display: inline-block;
+}
+
+
+
+
+/* botões de enviar e resetar */
+.contactt h4{
+  color: #fafafa;
+  font-family: 'Fira Code', monospace;
+}
+.test{
+  cursor: pointer;
+  background-color: rgb(169, 255, 135);
+  font-weight: 600;
+  height:50px;
+  width:80px;
+  border-radius: 8px;
+  transition: 400ms;
+  border: 0;
+}
+.test:hover{ /* quando passa o mouse em cima, a cor do botão muda! */
+  background-color: #088734;
+}
+
+
+
+
+
+
+
+/* ficha de envio de email */
+* {
+  box-sizing: border-box;
+}
+input[type=text],
+select,
+textarea {
+  font-family: 'Fira Code', monospace;
+  
+  font-size: medium;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #45a049;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  
+  resize: vertical;
+}
+input[type=submit] {
+  cursor: pointer;
+  background-color: rgb(169, 255, 135);
+  font-weight: 600;
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  transition: 400ms;
+  border: 0;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset] {
+  cursor: pointer;
+  background-color: rgb(169, 255, 135);
+  font-weight: 600;
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  transition: 400ms;
+  border: 0;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+.container {
+  font-family: 'Fira Code', monospace;
+  border-radius: 5px;
+  
+}
+.box{
+  margin-left: 20px;
+  }
+.box p{
+  height:120px;
+  width:325px;
+  font-weight: 600;
+  padding: 12px;
+  background-color:#f2f2f2;
+  border-radius: 8px;
+  resize: vertical;
+}
