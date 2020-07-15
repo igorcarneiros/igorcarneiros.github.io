@@ -29,9 +29,13 @@ h3 {
   font-size: 20px;
   text-align: center;
 }
+h4{
+  color: #fafafa;
+  font-weight: bold;
+}
 p {
   color: #fafafa;
-  text-align: justify;
+  text-align: left;
   font-size: 16px;
   
 }
@@ -53,6 +57,16 @@ p {
   padding-bottom: 50px;
 }
 
+
+
+
+
+.w3-padding-16{
+  border-radius: 8px; 
+  color: #fafafa;
+  font-size: large;
+  background-color: #1f1f1fCC;
+}
 #home .mySlides img{
   object-fit: cover;
   object-position: center;
@@ -82,7 +96,9 @@ p {
 
 
 
-/* hover para as categorias do portfolio */
+
+
+/* hover for portfolio categories */
 .over {
   position: relative;
 }
@@ -131,21 +147,28 @@ p {
   text-align: justify;
 }
 
+
+
+
+
+
+/* footer menu and footer info */
+.contactt h4{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fafafa;
+  font-family: 'Fira Code', monospace;
+}
 .bg-footer {
   position: bottom;
   color: #00ff00;
-  
 }
-
-
-
-
 .w-contacts-item{
   text-align: left;
  }
 .w-socials{
   font-family: 'Fira Code', monospace;
-  text-align: justify;
+  text-align: left;
   font-weight: normal;
   color: #fafafa; 
 }
@@ -159,8 +182,8 @@ p {
 }
 .footer-menu ul li a{
   cursor: pointer;
+  font-weight: normal;
   color: #fafafa;
-  text-decoration:none;
 }
 .footer-menu ul  {
   list-style: none; 
@@ -177,11 +200,8 @@ p {
 
 
 
-/* botões de enviar e resetar */
-.contactt h4{
-  color: #fafafa;
-  font-family: 'Fira Code', monospace;
-}
+
+/* send and  resert buttons */
 .test{
   cursor: pointer;
   background-color: rgb(169, 255, 135);
@@ -192,7 +212,7 @@ p {
   transition: 400ms;
   border: 0;
 }
-.test:hover{ /* quando passa o mouse em cima, a cor do botão muda! */
+.test:hover{
   background-color: #088734;
 }
 
@@ -201,8 +221,7 @@ p {
 
 
 
-
-/* ficha de envio de email */
+/* email form */
 * {
   box-sizing: border-box;
 }
