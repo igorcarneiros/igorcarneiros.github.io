@@ -100,7 +100,9 @@ p {
   text-align: center;
   margin-bottom: 20px;
 }
-
+iframe{
+  border-radius: 8px;
+}
 
 
 
