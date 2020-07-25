@@ -69,84 +69,78 @@
             </div>
         </nav>
 
-        <section id="servicos">
-            <div class="container-fluid text-center margin">
-                <h2>Serviços
-                </h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <h3>Segurança Cibernética</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w1.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Proteja seu computador, E-mail e redes sociais</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Desenvolvimento de Sites</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w3.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Para deixar seu negócio visível para o mundo</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Consultoria de TI</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w5.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Do que você precisa? Vamos conversar?</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Formatação e Limpeza de Sistema</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w6.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Comece do zero com seu PC limpo e rápido</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Assistência Técnica Presencial e Remota</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w2.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Solução de problemas
-                                            <i>in loco</i>
-                                            e à distância</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Backup e Recuperação de Arquivos</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w4.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Para manter seus documentos importantes a salvo</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'sc')" id="defaultOpen">Segurança Cibernética</button>
+            <button class="tablinks" onclick="openCity(event, 'ds')">Desenvolvimento de Sites</button>
+            <button class="tablinks" onclick="openCity(event, 'ct')">Consultoria de TI</button>
+            <button class="tablinks" onclick="openCity(event, 'fls')">Formatação e Limpeza de Sistema</button>
+            <button class="tablinks" onclick="openCity(event, 'atpr')">Assistência Técnica Presencial e Remota</button>
+            <button class="tablinks" onclick="openCity(event, 'bra')">Backup e Recuperação de Arquivos</button>
+        </div>
+
+        <div id="sc" class="tabcontent mySlides">
+            <img src="/public/assets/w1.jpg">
+            <h3>Proteja seu computador, E-mail e redes sociais</h3>
+        </div>
+
+        <div id="ds" class="tabcontent">
+            <img src="/public/assets/w3.jpg">
+            <h3>Para deixar seu negócio visível para o mundo</h3>
+        </div>
+
+        <div id="ct" class="tabcontent">
+            <h3>Do que você precisa? Vamos conversar?</h3>
+            <img src="/public/assets/w5.jpg">
+
+        </div>
+
+        <div id="fls" class="tabcontent">
+            <h3>Comece do zero com seu PC limpo e rápido</h3>
+            <img src="/public/assets/w6.jpg">
+
+        </div>
+
+        <div id="atpr" class="tabcontent">
+            <h3>Solução de problemas
+                <i>in loco</i>
+                e à distância</h3>
+            <img src="/public/assets/w2.jpg">
+
+        </div>
+
+        <div id="bra" class="tabcontent">
+            <h3>Para manter seus documentos importantes a salvo</h3>
+            <img src="/public/assets/w4.jpg">
+
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i,
+                    tabcontent,
+                    tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i]
+                        .className
+                        .replace(" active", "");
+                }
+                document
+                    .getElementById(cityName)
+                    .style
+                    .display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document
+                .getElementById("defaultOpen")
+                .click();
+        </script>
 
         <div class="container-fluid text-center margin navbar">
             <div class="container">
