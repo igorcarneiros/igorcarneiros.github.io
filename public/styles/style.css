@@ -311,8 +311,12 @@ input[type=reset]:hover {
   float: left;
  
   background-color: #141414;
-  width: 30%;
+  width: 100%;
   height: 100%;
+
+}
+.limite .col-lg-6{
+  padding: 0px;
 }
 
 /* Style the buttons inside the tab */
@@ -324,10 +328,10 @@ input[type=reset]:hover {
   width: 100%;
   border: none;
   outline: none;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 /* Change background color of buttons on hover */
@@ -347,15 +351,20 @@ input[type=reset]:hover {
 }
 .tabcontent img{
   object-fit: cover;
-  width: 70%;
-  height: 650px;
+  border-radius: 0px;
+  width: 100%;
+  height: 390px;
   opacity: 0.1;
   
 }
-.tabcontent h3{
+.tabcontent p{
     position: absolute;
-    top: 30%;
-    left: 66%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: #fafafa;
 }
+
+
+
+
+
