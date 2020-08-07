@@ -1,442 +1,492 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <style>
-            .mySlides {
-                display: none;
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+
+        .w3-badge,
+        .w3-left,
+        .w3-right {
+            cursor: pointer;
+        }
+
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0;
+        }
+    </style>
+    <title>Kriari informática</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/public/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/public/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <a name="top"></a>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li class="nav-item">
+            <a class="menu" href="/about.html">Sobre<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/portfolio.html">Portfólio</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/referencias.html">Referências</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/contact.html">Contato</a>
+        </li>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class=" navbar-brand" href="/index.html">
+            <img src="/public/assets/logo.png">
+        </a>
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">Sobre<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portfolio.html">Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/referencias.html">Referências</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <button class="openbtn" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
+    </nav>
+
+    <section id="home">
+        <div>
+            <div class="mySlides w3-animate-left">
+                <img src="public/assets/s1.jpg">
+                <div class="w3-display-middle w3-container w3-padding-16 text-center">
+                    Seu computador foi hackeado?
+                </div>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-left">
+                <img src="public/assets/s2.jpg">
+                <div class="w3-display-middle w3-container w3-padding-16 text-center">
+                    Precisa de ajuda com o PC,
+                    <br>
+                    mas quer manter a distância social?
+                </div>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-left">
+                <img src="public/assets/s4.jpg">
+                <div class="w3-display-middle w3-container w3-padding-16 text-center">
+                    Buscando alguma solução em TI?
+                </div>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-left">
+                <img src="public/assets/s3.jpg">
+                <div class="w3-display-middle w3-container w3-padding-16 text-center">
+                    Podemos te ajudar!
+                </div>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                </div>
+            </div>
+
+            <div class="mySlides w3-animate-left">
+                <img src="public/assets/s5.jpg">
+                <div class="w3-display-middle w3-container w3-padding-16 text-center ss">
+                    <h1>KRIARI INFORMÁTICA</h1>
+                    <img src="public/assets/ss.png">
+                </div>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
             }
-            .w3-badge,
-            .w3-left,
-            .w3-right {
-                cursor: pointer;
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
             }
-            .w3-badge {
-                height: 13px;
-                width: 13px;
-                padding: 0;
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i]
+                        .className
+                        .replace(" w3-white", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-white";
             }
-        </style>
-        <title>Kriari informática</title>
+        </script>
+        <script>
+            var myIndex = 0;
+            carousel();
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="/bootstrap/js/bootstrap.js"></script>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto&display=swap" rel="stylesheet">
-
-        <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/public/favicons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/public/favicons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/public/favicons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/public/favicons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/public/favicons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/public/favicons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/public/favicons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/public/favicons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/public/favicons/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/public/favicons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-
-    </head>
-    <body>
-        <a name="top"></a>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class=" navbar-brand" href="/index.html">
-                <img src="/public/assets/logo.png">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/about.html">Sobre<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/portfolio.html">Portfólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/servicos.html">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/referencias.html">Referências</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <section id="home">
-            <div>
-                <div class="mySlides w3-animate-left">
-                    <img src="public/assets/s1.jpg">
-                    <div class="w3-display-middle w3-container w3-padding-16 text-center">
-                        Seu computador foi hackeado?
-                    </div>
-                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-                    </div>
-                </div>
-                <div class="mySlides w3-animate-left">
-                    <img src="public/assets/s2.jpg">
-                    <div class="w3-display-middle w3-container w3-padding-16 text-center">
-                        Precisa de ajuda com o PC,
-                        <br>
-                        mas quer manter a distância social?
-                    </div>
-                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-                    </div>
-                </div>
-                <div class="mySlides w3-animate-left">
-                    <img src="public/assets/s4.jpg">
-                    <div class="w3-display-middle w3-container w3-padding-16 text-center">
-                        Buscando alguma solução em TI?
-                    </div>
-                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-                    </div>
-                </div>
-                <div class="mySlides w3-animate-left">
-                    <img src="public/assets/s3.jpg">
-                    <div class="w3-display-middle w3-container w3-padding-16 text-center">
-                        Podemos te ajudar!
-                    </div>
-                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-                    </div>
-                </div>
-
-                <div class="mySlides w3-animate-left">
-                    <img src="public/assets/s5.jpg">
-                    <div class="w3-display-middle w3-container w3-padding-16 text-center ss">
-                        <h1>KRIARI INFORMÁTICA</h1>
-                        <img src="public/assets/ss.png">
-                    </div>
-                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-                    </div>
-                </div>
-            </div>
-            <script>
-                var slideIndex = 1;
-                showDivs(slideIndex);
-
-                function plusDivs(n) {
-                    showDivs(slideIndex += n);
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
-
-                function currentDiv(n) {
-                    showDivs(slideIndex = n);
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
                 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 7000);
+            }
+        </script>
+    </section>
 
-                function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("demo");
-                    if (n > x.length) {
-                        slideIndex = 1
-                    }
-                    if (n < 1) {
-                        slideIndex = x.length
-                    }
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i]
-                            .className
-                            .replace(" w3-white", "");
-                    }
-                    x[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " w3-white";
-                }
-            </script>
-            <script>
-                var myIndex = 0;
-                carousel();
-
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {
-                        myIndex = 1
-                    }
-                    x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 7000);
-                }
-            </script>
-        </section>
-
-        <section id="servicos">
-            <div class="container-fluid text-center margin">
-                <h2>Serviços
-                    <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
-                </h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <h3>Segurança Cibernética</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w1.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Proteja seu computador, E-mail e redes sociais</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Desenvolvimento de Sites</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w3.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Para deixar seu negócio visível para o mundo</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Consultoria de TI</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w5.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Do que você precisa? Vamos conversar?</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Formatação e Limpeza de Sistema</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w6.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Comece do zero com seu PC limpo e rápido</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Assistência Técnica Presencial e Remota</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w2.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Solução de problemas
-                                            <i>in loco</i>
-                                            e à distância</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <h3>Backup e Recuperação de Arquivos</h3>
-                            <div class="over">
-                                <a href="/servicos.html">
-                                    <img src="/public/assets/w4.jpg" width="100%">
-                                    <div class="overlay">
-                                        <div class="over-text">Para manter seus documentos importantes a salvo</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="parceiros">
-            <div class="container-fluid text-center margin parceiros">
-                <h2>Parceiros
-                    <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
-                </h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <a href="https://www.linkedin.com/in/igor-carneiro/" target="_blank" title="LinkedIn: Igor Carneiro">
-                                <img src="/public/assets/igor.jpeg" class="rounded-circle" width="30%">
-
-                                <br><br>
-                            </a>
-                            <p class="text-center">Devenvolvedor: Igor Carneiro</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <a href="https://www.linkedin.com/in/igor-carneiro/" target="_blank" title="LinkedIn: Guilherme Bertolassi">
-                                <img src="/public/assets/bertolassi.jpeg" class="rounded-circle" width="30%">
-                                <br><br>
-                            </a>
-                            <p class="text-center">Designer: Guilherme Bertolassi</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="referencias">
-            <div class="container-fluid text-center margin">
-                <h2>Referências
-                    <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
-                </h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <h3>&nbsp;&nbsp; "Igor muito obrigada pela ajuda! Caiu do céu hoje esse anúncio aqui e já indico. Resolveu o meu problema remotamente, através de um app. Nem precisou de visita, além do preço super justo. Quem precisar, conte com o Igor."
-                                <br><br>
-                            </h3>
-                            <p>- Fernanda Barreto [suporte técnico]</p>
-
-                        </div>
-                        <div class="col-lg-4"></div>
-                        <div class="col-lg-4">
-                            <h3>&nbsp;&nbsp;
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="container-fluid text-center margin navbar">
+    <section id="servicos">
+        <div class="container-fluid text-center margin">
+            <h2>Serviços
+                <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
+            </h2>
             <div class="container">
-                <div class="row contactt">
-
+                <div class="row">
                     <div class="col-lg-4">
-                        <h4>Kriari Informática</h4>
-                        <br>
-                        <p class="w-socials">Somos uma empresa de segurança cibernética, suporte técnico, assistência presencial e remota, desenvolvimento, consultoria e soluções em TI focada na comunicação clara e transparente com o cliente, nos preços acessíveis e no atendimento customizado.</p>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <h4>Menu
-                            <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
-                        </h4>
-                        <br>
-                        <div class="footer-menu">
-                            <ul >
-                                <li >
-                                    <a href="#">Início</a>
-                                </li>
-                                <li >
-                                    <a href="/about.html">Sobre</a>
-                                </li>
-                                <li >
-                                    <a href="/servicos.html">Serviços</a>
-                                </li>
-                                <li >
-                                    <a href="/portfolio.html">Portfolio</a>
-                                </li>
-                                <li >
-                                    <a href="/referencias.html">Referências</a>
-                                </li>
-                                <li >
-                                    <a href="/contact.html">Contato</a>
-                                </li>
-                            </ul>
+                        <h3>Segurança Cibernética</h3>
+                        <div class="over">
+                            <a href="/servicos.html">
+                                <img src="/public/assets/w1.jpg" width="100%">
+                                <div class="overlay">
+                                    <div class="over-text">Proteja seu computador, E-mail e redes sociais</div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-
                     <div class="col-lg-4">
-                        <div id="contact-2" class="widget widget_contact">
-                            <h4>Contato</h4>
-                            <br>
-                            <div class="w-contacts-item">
-                                <i class="fa fa-map-marker"></i>
-                                <span class="w-socials" title="Endereço">&nbsp;Estrada de Camorim 173, Rio de Janeiro - RJ</span>
-                            </div>
-
-                            <div class="w-contacts-item for_phone">
-                                <i class="fa fa-phone"></i>
-                                <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(22) 98144-5537</span>
-                            </div>
-
-                            <div class="w-contacts-item for_email">
-                                <i class="fa fa-envelope"></i>
-                                <span class="w-socials">
-                                    <a href="mailto:kriarinformatica@gmail.com" title="E-mail">&nbsp;kriarinformatica@gmail.com</a>
-                                </span>
-                            </div>
+                        <h3>Desenvolvimento de Sites</h3>
+                        <div class="over">
+                            <a href="/servicos.html">
+                                <img src="/public/assets/w3.jpg" width="100%">
+                                <div class="overlay">
+                                    <div class="over-text">Para deixar seu negócio visível para o mundo</div>
+                                </div>
+                            </a>
                         </div>
-                        <br>
-                        <div class="w-socials">
-                            <div class="socialm">
-                                <a href="https://www.linkedin.com/in/igor-carneiro/" target="_blank">
-                                    <img src="/public/assets/linkedin.png" width="40px" title="LinkedIn">
-                                </a>
-                            </div>
-                            &nbsp;
-                            <div class="socialm">
-                                <a href="https://github.com/igorcarneiros" target="_blank">
-                                    <img src="/public/assets/github.svg" width="40px" title="GitHub">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Consultoria de TI</h3>
+                        <div class="over">
+                            <a href="/servicos.html">
+                                <img src="/public/assets/w5.jpg" width="100%">
+                                <div class="overlay">
+                                    <div class="over-text">Do que você precisa? Vamos conversar?</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Formatação e Limpeza de Sistema</h3>
+                        <div class="over">
+                            <a href="/servicos.html">
+                                <img src="/public/assets/w6.jpg" width="100%">
+                                <div class="overlay">
+                                    <div class="over-text">Comece do zero com seu PC limpo e rápido</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Assistência Técnica Presencial e Remota</h3>
+                        <div class="over">
+                            <a href="/servicos.html">
+                                <img src="/public/assets/w2.jpg" width="100%">
+                                <div class="overlay">
+                                    <div class="over-text">Solução de problemas
+                                        <i>in loco</i>
+                                        e à distância</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Backup e Recuperação de Arquivos</h3>
+                        <div class="over">
+                            <a href="/servicos.html">
+                                <img src="/public/assets/w4.jpg" width="100%">
+                                <div class="overlay">
+                                    <div class="over-text">Para manter seus documentos importantes a salvo</div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="parceiros">
+        <div class="container-fluid text-center margin parceiros">
+            <h2>Parceiros
+                <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
+            </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="https://www.linkedin.com/in/igor-carneiro/" target="_blank"
+                            title="LinkedIn: Igor Carneiro">
+                            <img src="/public/assets/igor.jpeg" class="rounded-circle" width="30%">
+
+                            <br><br>
+                        </a>
+                        <p class="text-center">Devenvolvedor: Igor Carneiro</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="https://www.linkedin.com/in/igor-carneiro/" target="_blank"
+                            title="LinkedIn: Guilherme Bertolassi">
+                            <img src="/public/assets/bertolassi.jpeg" class="rounded-circle" width="30%">
+                            <br><br>
+                        </a>
+                        <p class="text-center">Designer: Guilherme Bertolassi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="referencias">
+        <div class="container-fluid text-center margin">
+            <h2>Referências
+                <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
+            </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3>&nbsp;&nbsp; "Igor muito obrigada pela ajuda! Caiu do céu hoje esse anúncio aqui e já
+                            indico. Resolveu o meu problema remotamente, através de um app. Nem precisou de visita, além
+                            do preço super justo. Quem precisar, conte com o Igor."
+                            <br><br>
+                        </h3>
+                        <p>- Fernanda Barreto [suporte técnico]</p>
+
+                    </div>
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <h3>&nbsp;&nbsp;
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid text-center margin navbar">
+        <div class="container">
+            <div class="row contactt">
+
+                <div class="col-lg-4">
+                    <h4>Kriari Informática</h4>
+                    <br>
+                    <p class="w-socials">Somos uma empresa de segurança cibernética, suporte técnico, assistência
+                        presencial e remota, desenvolvimento, consultoria e soluções em TI focada na comunicação clara e
+                        transparente com o cliente, nos preços acessíveis e no atendimento customizado.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h4>Menu
+                        <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
+                    </h4>
+                    <br>
+                    <div class="footer-menu">
+                        <ul>
+                            <li>
+                                <a href="#">Início</a>
+                            </li>
+                            <li>
+                                <a href="/about.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="/servicos.html">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="/portfolio.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="/referencias.html">Referências</a>
+                            </li>
+                            <li>
+                                <a href="/contact.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div id="contact-2" class="widget widget_contact">
+                        <h4>Contato</h4>
+                        <br>
+                        <div class="w-contacts-item">
+                            <i class="fa fa-map-marker"></i>
+                            <span class="w-socials" title="Endereço">&nbsp;Estrada de Camorim 173, Rio de Janeiro -
+                                RJ</span>
+                        </div>
+
+                        <div class="w-contacts-item for_phone">
+                            <i class="fa fa-phone"></i>
+                            <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(22) 98144-5537</span>
+                        </div>
+
+                        <div class="w-contacts-item for_email">
+                            <i class="fa fa-envelope"></i>
+                            <span class="w-socials">
+                                <a href="mailto:kriarinformatica@gmail.com"
+                                    title="E-mail">&nbsp;kriarinformatica@gmail.com</a>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w-socials">
+                        <div class="socialm">
+                            <a href="https://www.linkedin.com/in/igor-carneiro/" target="_blank">
+                                <img src="/public/assets/linkedin.png" width="40px" title="LinkedIn">
+                            </a>
+                        </div>
+                        &nbsp;
+                        <div class="socialm">
+                            <a href="https://github.com/igorcarneiros" target="_blank">
+                                <img src="/public/assets/github.svg" width="40px" title="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
-</div>
+    </div>
 
-<footer class="container-fluid text-center margin bg-footer">
-    Copyright© 2020 Igor Carneiro. Todos os direitos reservados.
-</footer>
+    <footer class="container-fluid text-center margin bg-footer">
+        Copyright© 2020 <a href="http://www.kriari.net/" target="_blank">Kriari Informática</a>. Todos os direitos
+        reservados.
+    </footer>
 
 </body>
+
 </html>

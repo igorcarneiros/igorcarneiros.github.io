@@ -1,246 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Kriari informática</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kriari informática</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="/bootstrap/js/bootstrap.js"></script>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
 
-        <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/public/favicons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/public/favicons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/public/favicons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/public/favicons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/public/favicons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/public/favicons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/public/favicons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/public/favicons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/public/favicons/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/public/favicons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/public/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/public/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    </head>
-    <body>
-        <a name="top"></a>
+</head>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class=" navbar-brand" href="/index.html">
-                <img src="/public/assets/logo.png">
-            </a>
+<body>
+    <a name="top"></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/about.html">Sobre<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/portfolio.html">Portfólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/servicos.html">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/referencias.html">Referências</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="limite row">
-            <div class="tab col-lg-6">
-                <button class="tablinks" onclick="openCity(event, 'sc')" id="defaultOpen">Segurança Cibernética</button>
-                <button class="tablinks" onclick="openCity(event, 'ds')">Desenvolvimento de Sites</button>
-                <button class="tablinks" onclick="openCity(event, 'fls')">Formatação e Limpeza de Sistema</button>
-                <button class="tablinks" onclick="openCity(event, 'atpr')">Assistência Técnica Presencial e Remota</button>
-                <button class="tablinks" onclick="openCity(event, 'bra')">Backup e Recuperação de Arquivos</button>
-                <button class="tablinks" onclick="openCity(event, 'ct')">Consultoria de TI</button>
-            </div>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li class="nav-item">
+            <a class="menu" href="/about.html">Sobre<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/portfolio.html">Portfólio</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/referencias.html">Referências</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/contact.html">Contato</a>
+        </li>
+    </div>
 
-            <div class="col-lg-6">
-                <div id="sc" class="tabcontent mySlides">
-                    <img src="/public/assets/w1.jpg">
-                    <p class="example">
-                        >> Manutenção de segurança preventiva do computador
-                        <br><br>
-                        >> Defesa do sistema operacional contra hackers<br><br>
-                        >> Consultoria de como proteger melhor seus arquivos e seu computador<br><br>
-                        >> O que fazer caso seja hackeado
-                    </p>
-                </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
 
-                <div id="ds" class="tabcontent">
-                    <img src="/public/assets/w3.jpg">
-                    <p>Precisa de um website, e rápido? Desenvolvemos um website estáticos para você!</p>
-                </div>
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
 
-                <div id="fls" class="tabcontent">
-                    <p class="example">
-                        >> Melhoria de desempenho do seu PC<br><br>
-                        >> Formatação e limpeza do computador para livrar-lo de vírus e lentidão<br><br>
-                        >> Instalação e manutenção de sistemas operacionais Windows e Linux.</p>
-                    <img src="/public/assets/w6.jpg">
-                </div>
 
-                <div id="atpr" class="tabcontent">
-                    <p class="example">
-                        >> Suporte remoto totalmente seguro<br><br>
-                        >> Assistência técnica de informática no local<br><br>
-                        >> Instalação de impressoras e outros equipamentos
-                    </p>
-                    <img src="/public/assets/w2.jpg">
-                </div>
 
-                <div id="bra" class="tabcontent">
-                    <p class="example">
-                        >> Backup de arquivos em mídias externas, em Nuvem, no sistema<br><br>
-                        >> Particionamento de HD para efetuação de Backup<br><br>
-                        >> Configuração de Backup automático dos seus dados e arquivos<br><br>
-                        >> Recuperação de dados perdidos
-                    </p>
-                    <img src="/public/assets/w4.jpg">
-                </div>
 
-                    <div id="ct" class="tabcontent">
-                    <p>Você precisa de alguma outra solução para seu computador? Conta pra gente, podemos te ajudar!</p>
-                    <img src="/public/assets/w5.jpg">
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class=" navbar-brand" href="/index.html">
+            <img src="/public/assets/logo.png">
+        </a>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">Sobre<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portfolio.html">Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/referencias.html">Referências</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <button class="openbtn" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
+    </nav>
+
+    <div class="limite row">
+        <div class="tab col-lg-6">
+            <button class="tablinks" onclick="openCity(event, 'sc')" id="defaultOpen">Segurança Cibernética</button>
+            <button class="tablinks" onclick="openCity(event, 'ds')">Desenvolvimento de Sites</button>
+            <button class="tablinks" onclick="openCity(event, 'fls')">Formatação e Limpeza de Sistema</button>
+            <button class="tablinks" onclick="openCity(event, 'atpr')">Assistência Técnica Presencial e Remota</button>
+            <button class="tablinks" onclick="openCity(event, 'bra')">Backup e Recuperação de Arquivos</button>
+            <button class="tablinks" onclick="openCity(event, 'ct')">Consultoria de TI</button>
         </div>
 
-        <script>
-            function openCity(evt, cityName) {
-                var i,
-                    tabcontent,
-                    tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i]
-                        .className
-                        .replace(" active", "");
-                }
-                document
-                    .getElementById(cityName)
-                    .style
-                    .display = "block";
-                evt.currentTarget.className += " active";
+        <div class="col-lg-6">
+            <div id="sc" class="tabcontent mySlides">
+                <img src="/public/assets/w1.jpg">
+                <p class="example">
+                    >> Manutenção de segurança preventiva do computador
+                    <br><br>
+                    >> Defesa do sistema operacional contra hackers<br><br>
+                    >> Consultoria de como proteger melhor seus arquivos e seu computador<br><br>
+                    >> O que fazer caso seja hackeado
+                </p>
+            </div>
+
+            <div id="ds" class="tabcontent">
+                <img src="/public/assets/w3.jpg">
+                <p>Precisa de um website, e rápido? Desenvolvemos um website estáticos para você!</p>
+            </div>
+
+            <div id="fls" class="tabcontent">
+                <p class="example">
+                    >> Melhoria de desempenho do seu PC<br><br>
+                    >> Formatação e limpeza do computador para livrar-lo de vírus e lentidão<br><br>
+                    >> Instalação e manutenção de sistemas operacionais Windows e Linux.</p>
+                <img src="/public/assets/w6.jpg">
+            </div>
+
+            <div id="atpr" class="tabcontent">
+                <p class="example">
+                    >> Suporte remoto totalmente seguro<br><br>
+                    >> Assistência técnica de informática no local<br><br>
+                    >> Instalação de impressoras e outros equipamentos
+                </p>
+                <img src="/public/assets/w2.jpg">
+            </div>
+
+            <div id="bra" class="tabcontent">
+                <p class="example">
+                    >> Backup de arquivos em mídias externas, em Nuvem, no sistema<br><br>
+                    >> Particionamento de HD para efetuação de Backup<br><br>
+                    >> Configuração de Backup automático dos seus dados e arquivos<br><br>
+                    >> Recuperação de dados perdidos
+                </p>
+                <img src="/public/assets/w4.jpg">
+            </div>
+
+            <div id="ct" class="tabcontent">
+                <p>Você precisa de alguma outra solução para seu computador? Conta pra gente, podemos te ajudar!</p>
+                <img src="/public/assets/w5.jpg">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i,
+                tabcontent,
+                tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
-
-            // Get the element with id="defaultOpen" and click on it
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i]
+                    .className
+                    .replace(" active", "");
+            }
             document
-                .getElementById("defaultOpen")
-                .click();
-        </script>
+                .getElementById(cityName)
+                .style
+                .display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-        <div class="container-fluid text-center margin navbar">
-            <div class="container">
-                <div class="row contactt">
+        // Get the element with id="defaultOpen" and click on it
+        document
+            .getElementById("defaultOpen")
+            .click();
+    </script>
 
-                    <div class="col-lg-4">
-                        <h4>Kriari Informática</h4>
-                        <br>
-                        <p class="w-socials">Somos uma empresa de segurança cibernética, suporte técnico, assistência presencial e remota, desenvolvimento, consultoria e soluções em TI focada na comunicação clara e transparente com o cliente, nos preços acessíveis e no atendimento customizado.</p>
+    <div class="container-fluid text-center margin navbar">
+        <div class="container">
+            <div class="row contactt">
+
+                <div class="col-lg-4">
+                    <h4>Kriari Informática</h4>
+                    <br>
+                    <p class="w-socials">Somos uma empresa de segurança cibernética, suporte técnico, assistência
+                        presencial e remota, desenvolvimento, consultoria e soluções em TI focada na comunicação clara e
+                        transparente com o cliente, nos preços acessíveis e no atendimento customizado.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h4>Menu
+                        <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
+                    </h4>
+                    <br>
+                    <div class="footer-menu">
+                        <ul>
+                            <li>
+                                <a href="/index.html">Início</a>
+                            </li>
+                            <li>
+                                <a href="/about.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="/portfolio.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="/referencias.html">Referências</a>
+                            </li>
+                            <li>
+                                <a href="/contact.html">Contato</a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="col-lg-4">
-                        <h4>Menu
-                            <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
-                        </h4>
+                <div class="col-lg-4">
+                    <div id="contact-2" class="widget widget_contact">
+                        <h4>Contato</h4>
                         <br>
-                        <div class="footer-menu">
-                            <ul >
-                                <li >
-                                    <a href="/index.html">Início</a>
-                                </li>
-                                <li >
-                                    <a href="/about.html">Sobre</a>
-                                </li>
-                                <li >
-                                    <a href="#">Serviços</a>
-                                </li>
-                                <li >
-                                    <a href="/portfolio.html">Portfolio</a>
-                                </li>
-                                <li >
-                                    <a href="/referencias.html">Referências</a>
-                                </li>
-                                <li >
-                                    <a href="/contact.html">Contato</a>
-                                </li>
-                            </ul>
+                        <div class="w-contacts-item">
+                            <i class="fa fa-map-marker"></i>
+                            <span class="w-socials" title="Endereço">&nbsp;Estrada de Camorim 173, Rio de Janeiro -
+                                RJ</span>
+                        </div>
+
+                        <div class="w-contacts-item for_phone">
+                            <i class="fa fa-phone"></i>
+                            <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(22) 98144-5537</span>
+                        </div>
+
+                        <div class="w-contacts-item for_email">
+                            <i class="fa fa-envelope"></i>
+                            <span class="w-socials">
+                                <a href="mailto:kriarinformatica@gmail.com"
+                                    title="E-mail">&nbsp;kriarinformatica@gmail.com</a>
+                            </span>
                         </div>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div id="contact-2" class="widget widget_contact">
-                            <h4>Contato</h4>
-                            <br>
-                            <div class="w-contacts-item">
-                                <i class="fa fa-map-marker"></i>
-                                <span class="w-socials" title="Endereço">&nbsp;Estrada de Camorim 173, Rio de Janeiro - RJ</span>
-                            </div>
-
-                            <div class="w-contacts-item for_phone">
-                                <i class="fa fa-phone"></i>
-                                <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(22) 98144-5537</span>
-                            </div>
-
-                            <div class="w-contacts-item for_email">
-                                <i class="fa fa-envelope"></i>
-                                <span class="w-socials">
-                                    <a href="mailto:kriarinformatica@gmail.com" title="E-mail">&nbsp;kriarinformatica@gmail.com</a>
-                                </span>
-                            </div>
+                    <br>
+                    <div class="w-socials">
+                        <div class="socialm">
+                            <a href="https://www.linkedin.com/in/igor-carneiro/" target="_blank">
+                                <img src="/public/assets/linkedin.png" width="40px" title="LinkedIn">
+                            </a>
                         </div>
-                        <br>
-                        <div class="w-socials">
-                            <div class="socialm">
-                                <a href="https://www.linkedin.com/in/igor-carneiro/" target="_blank">
-                                    <img src="/public/assets/linkedin.png" width="40px" title="LinkedIn">
-                                </a>
-                            </div>
-                            &nbsp;
-                            <div class="socialm">
-                                <a href="https://github.com/igorcarneiros" target="_blank">
-                                    <img src="/public/assets/github.svg" width="40px" title="GitHub">
-                                </a>
-                            </div>
+                        &nbsp;
+                        <div class="socialm">
+                            <a href="https://github.com/igorcarneiros" target="_blank">
+                                <img src="/public/assets/github.svg" width="40px" title="GitHub">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
-</div>
+    </div>
 
-<footer class="container-fluid text-center margin bg-footer">
-    Copyright© 2020 Igor Carneiro. Todos os direitos reservados.
-</footer>
+    <footer class="container-fluid text-center margin bg-footer">
+        Copyright© 2020 <a href="http://www.kriari.net/" target="_blank">Kriari Informática</a>. Todos os direitos
+        reservados.
+    </footer>
 </body>
+
 </html>
