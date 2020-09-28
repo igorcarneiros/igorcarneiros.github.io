@@ -108,9 +108,8 @@ p {
 #parceiros p{
   color: #00ff00;
 }
-.parceiros {
-  background-color: #1f1f1f !important;
-}
+
+
 .parceiros .row {
   margin-top: 50px;
 }
@@ -183,12 +182,41 @@ iframe{
 .about {
   background-color: #bebebe80;
 }
+
+#servicos {
+  background-image: linear-gradient(#000000b6, #000000b6), url(/public/assets/s5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#portfolio {
+  background-image: linear-gradient(#000000b6, #000000b6), url(/public/assets/s5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 #publicacoes img {
   width: 100%;
   height: 240px;
 }
-#referencias h3 {
-  text-align: justify;
+#referencias {
+  background-image: linear-gradient(#000000b6, #000000b6), url(/public/assets/s5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#referencias .container {
+  background-color: #fafafade;
+}
+#contato {
+  background-image: linear-gradient(#000000b6, #000000b6), url(/public/assets/s5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -445,3 +473,5 @@ input[type=reset]:hover {
   background-color:#fafafa;
   border-radius: 8px;
 }
+
+
